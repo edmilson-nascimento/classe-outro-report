@@ -9,8 +9,6 @@ class_name = '\PROGRAM=ZTESTE_ENJ\CLASS=LOCAL_CLASS'.
 
 create object obj type (class_name).
 
-break-point.
-
 try .
 
   call method obj->('IDADE')
