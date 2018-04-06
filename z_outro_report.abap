@@ -46,17 +46,3 @@ class local_class implementation .
 
 
 endclass .
-
-
-initialization .
-
-*data:
-*  obj   type ref to local_class,
-*  idade type i .
-*
-*create object obj.
-*
-*  idade =
-*    obj->idade( '19000101' ) .
-*
-*write:/ 'Você tem ', idade, 'anos' .
