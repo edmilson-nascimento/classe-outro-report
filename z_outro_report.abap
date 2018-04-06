@@ -1,13 +1,5 @@
-*&---------------------------------------------------------------------*
-*& Report  ZTESTE_ENJ
-*&
-*&---------------------------------------------------------------------*
-*&
-*&
-*&---------------------------------------------------------------------*
 
-report  zteste_enj.
-
+report  z_outro_report.
 
 class local_class definition .
 
@@ -58,13 +50,13 @@ endclass .
 
 initialization .
 
-data:
-  obj   type ref to local_class,
-  idade type i .
-
-create object obj.
-
-  idade =
-    obj->idade( '19860730' ) .
-
-write:/ 'Você tem ', idade, 'anos' .
+*data:
+*  obj   type ref to local_class,
+*  idade type i .
+*
+*create object obj.
+*
+*  idade =
+*    obj->idade( '19000101' ) .
+*
+*write:/ 'Você tem ', idade, 'anos' .
