@@ -2,7 +2,7 @@
 
 [![N|Solid](https://wiki.scn.sap.com/wiki/download/attachments/1710/ABAP%20Development.png?version=1&modificationDate=1446673897000&api=v2)](https://www.sap.com/brazil/developer.html)
 
-Em alguns momentos houve a necessidade de **acessar uma classe local (criada dentro de um report) de outro include/report/classe**. A primeira solução que foi sugerida a mim era criar pela SE24 essa mesma classe que estava local. Quando houve a primeira necessidade, foi o que fiz realmente, mas ainda fiquei tendencioso a achar uma maneira de fazer esse acesso. Depois de mais duas ou três incidencias dessa necessidade eu decidi não mais fazer isso, por ter mais tempo para montar a solução. Logo, aqui será exemplificado um [include](/blob/master/z_outro_report.abap) que utilizará métodos de uma classe local que esta em um [programa](/blob/master/z_report.abap) diferente.
+Em alguns momentos houve a necessidade de **acessar uma classe local (criada dentro de um report) de outro include/report/classe**. A primeira solução que foi sugerida a mim era criar pela SE24 essa mesma classe que estava local. Quando houve a primeira necessidade, foi o que fiz realmente, mas ainda fiquei tendencioso a achar uma maneira de fazer esse acesso. Depois de mais duas ou três incidencias dessa necessidade eu decidi não mais fazer isso, por ter mais tempo para montar a solução. Logo, aqui será exemplificado um [include](/z_outro_report.abap) que utilizará métodos de uma classe local que esta em um [programa](/z_report.abap) diferente.
 
 * [tipos de report's](#tipos-de-reports)
 * [declaração](#declara%C3%A7%C3%A3o)
