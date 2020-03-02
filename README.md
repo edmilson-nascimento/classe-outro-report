@@ -4,10 +4,10 @@
 
 Em alguns momentos houve a necessidade de **acessar uma classe local (criada dentro de um report) de outro include/report/classe**. A primeira solução que foi sugerida a mim era criar pela SE24 essa mesma classe que estava local. Quando houve a primeira necessidade, foi o que fiz realmente, mas ainda fiquei tendencioso a achar uma maneira de fazer esse acesso. Depois de mais duas ou três incidencias dessa necessidade eu decidi não mais fazer isso, por ter mais tempo para montar a solução. Logo, aqui será exemplificado um [include](/z_outro_report.abap) que utilizará métodos de uma classe local que esta em um [programa](/z_report.abap) diferente.
 
-* [tipos de report's](#tipos-de-reports)
-* [declaração](#declara%C3%A7%C3%A3o)
-* [atribuição de valores](#atribui%C3%A7%C3%A3o-de-valores)
-* [utilização do objeto](#utiliza%C3%A7%C3%A3o-do-objeto)
+* [Tipos de report's](#tipos-de-reports)
+* [Declaração](#declara%C3%A7%C3%A3o)
+* [Atribuição de valores](#atribui%C3%A7%C3%A3o-de-valores)
+* [Utilização do objeto](#utiliza%C3%A7%C3%A3o-do-objeto)
 
 Essa implementação é uma amostra básica e vou fazer isso usando parametros no método. Creio eu que a parte mais _importante_ ~~se é que existe algo mais importante em algo que um ponto faz com que o resto todo não funcione~~ é a forma de declarar as variaveis e os objetos.
 
