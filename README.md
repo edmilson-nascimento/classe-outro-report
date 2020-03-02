@@ -21,7 +21,7 @@ data:
   class_name type string,
   obj        type ref to object .
 ```
-O `class_name` como `string`, e o objeto`obj` ~~~as vezes me falta criatividade para declaração de variaveis~~ como `type ref to OBJECT`. Não sei porque ~~~talvez por estar à muitas horas sem café~~ mas eu sempre usava como `type ref to DATA`, logo, essa declaração acertiva me tomou muito tempo e isso foi bom para que eu não tivesse mais dúvidas sobre como fazer. 
+O `class_name` como `string`, e o objeto`obj` ~~as vezes me falta criatividade para declaração de variaveis~~ como `type ref to OBJECT`. Não sei porque ~~talvez por estar à muitas horas sem café~~ mas eu sempre usava como `type ref to DATA`, logo, essa declaração acertiva me tomou muito tempo e isso foi bom para que eu não tivesse mais dúvidas sobre como fazer. 
 
 ## Atribuição de valores ##
 
