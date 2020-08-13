@@ -39,10 +39,10 @@ class local_class implementation .
 *         d_months        =
 *         month_tab       =
                 .
-
     endif .
 
   endmethod .
+  
 
 
 endclass .
