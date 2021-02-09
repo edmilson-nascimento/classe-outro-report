@@ -21,7 +21,6 @@ try .
 
 endtry .
 
-
 if idade is not initial .
 
   write:/ 'Você tem ', idade, 'anos' .
