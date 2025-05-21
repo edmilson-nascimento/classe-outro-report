@@ -1,7 +1,11 @@
 # Acessar Classes em outro objeto ou report #
 
-[![ABAP](https://img.shields.io/badge/ABAP-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)](https://www.sap.com/brazil/developer.html)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/edmilson-nascimento/classe-outro-report)
+[![ABAP](https://img.shields.io/badge/ABAP-0FAAFF?style=flat&logo=sap&logoColor=white)](https://www.sap.com/brazil/developer.html)
+[![SAP](https://img.shields.io/badge/SAP-0FAAFF?style=flat&logo=sap&logoColor=white)](https://www.sap.com/)
+[![ABAP OO](https://img.shields.io/badge/ABAP%20OO-0FAAFF?style=flat)](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenabap_objects_glosry.htm)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/edmilson-nascimento/classe-outro-report)
+[![Commits](https://img.shields.io/github/commit-activity/t/edmilson-nascimento/classe-outro-report?style=flat)](https://github.com/edmilson-nascimento/classe-outro-report/commits)
+[![Development](https://img.shields.io/badge/Development-ABAP-blue?style=flat)](https://community.sap.com/topics/abap)
 
 Em alguns momentos houve a necessidade de **acessar uma classe local (criada dentro de um report) de outro include/report/classe**. A primeira solução que foi sugerida a mim era criar pela SE24 essa mesma classe que estava local. Quando houve a primeira necessidade, foi o que fiz realmente, mas ainda fiquei tendencioso a achar uma maneira de fazer esse acesso. Depois de mais duas ou três incidencias dessa necessidade eu decidi não mais fazer isso, por ter mais tempo para montar a solução. Logo, aqui será exemplificado um [include](/z_outro_report.abap) que utilizará métodos de uma classe local que esta em um [programa](/z_report.abap) diferente.
 
