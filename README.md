@@ -8,7 +8,7 @@
 [![Commits](https://img.shields.io/github/commit-activity/t/edmilson-nascimento/classe-outro-report?style=flat)](https://github.com/edmilson-nascimento/classe-outro-report/commits)
 [![Development](https://img.shields.io/badge/Development-ABAP-blue?style=flat&logo=sap&logoColor=white)](https://community.sap.com/topics/abap)
 
-Em alguns momentos houve a necessidade de **acessar uma classe local (criada dentro de um report) de outro include/report/classe**. A primeira solução que foi sugerida a mim era criar pela SE24 essa mesma classe que estava local. Quando houve a primeira necessidade, foi o que fiz realmente, mas ainda fiquei tendencioso a achar uma maneira de fazer esse acesso. Depois de mais duas ou três incidencias dessa necessidade eu decidi não mais fazer isso, por ter mais tempo para montar a solução. Logo, aqui será exemplificado um [include](/z_outro_report.abap) que utilizará métodos de uma classe local que esta em um [programa](/z_report.abap) diferente.
+Em alguns momentos houve a necessidade de **acessar uma classe local (criada dentro de um report) de outro include/report/classe**. A primeira solução que foi sugerida a mim era criar pela SE24 essa mesma classe que estava local. Quando houve a primeira necessidade, foi o que fiz realmente, mas ainda fiquei tendencioso a achar uma maneira de fazer esse acesso. Depois de mais duas ou três incidências dessa necessidade eu decidi não mais fazer isso, por ter mais tempo para montar a solução. Logo, aqui será exemplificado um [include](/z_outro_report.abap) que utilizará métodos de uma classe local que está em um [programa](/z_report.abap) diferente.
 
 * [Tipos de report's](#tipos-de-reports)
 * [Declaração](#declara%C3%A7%C3%A3o)
@@ -34,7 +34,7 @@ O `class_name` como `string`, e o objeto`obj` ~~as vezes me falta criatividade p
 ```abap
 class_name = '\PROGRAM=ZTESTE_ENJ\CLASS=LOCAL_CLASS'.
 ```
-Colocado como primero _parâmetro_ o nome do programa `'\PROGRAM=ZTESTE_ENJ`, e segundo _parâmetro_ `\CLASS=LOCAL_CLASS'` classe local que se referêncía. São as apenas essas as informações que devem ser passadas.
+Colocado como primeiro _parâmetro_ o nome do programa `'\PROGRAM=ZTESTE_ENJ`, e segundo _parâmetro_ `\CLASS=LOCAL_CLASS'` classe local que se referencia. São apenas essas as informações que devem ser passadas.
 
 ## Utilização do Objeto ##
 
@@ -53,13 +53,13 @@ try .
 
 endtry .
 ```
-Ao criar o objeto, será informado o seu `tipo`, que no caso, uma referência da classe. A partir da criação, o objeto passa a ser portar como um objeto da classe que foi passada, com acesso aos seus métodos e atribuidos como um objeto local e todas as suas caracteristicas. A chamada de métodos sempre deve ser feita usando `call method`. Eu particularmente, utilizo muito pouco dessa forma. Acho que o código fica mais limpo com a outra utilização (conforme abaixo).
+Ao criar o objeto, será informado o seu `tipo`, que no caso, uma referência da classe. A partir da criação, o objeto passa a se comportar como um objeto da classe que foi passada, com acesso aos seus métodos e atributos como um objeto local e todas as suas características. A chamada de métodos sempre deve ser feita usando `call method`. Eu particularmente, utilizo muito pouco dessa forma. Acho que o código fica mais limpo com a outra utilização (conforme abaixo).
 ```abap
 call method obj->('CHECK_INITIAL')
   receiving
     value = check .
 
-* utulizações diferentes do mesmo método
+* utilizações diferentes do mesmo método
 
 check = 
   obj->check_initial() .
