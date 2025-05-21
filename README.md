@@ -20,7 +20,7 @@
 - [Observações](#observações)
 
 ## Visão Geral
-Em alguns momentos houve a necessidade de **acessar uma classe local (criada dentro de um report) de outro include/report/classe**. A primeira solução que foi sugerida a mim era criar pela SE24 essa mesma classe que estava local. Quando houve a primeira necessidade, foi o que fiz realmente, mas ainda fiquei tendencioso a achar uma maneira de fazer esse acesso. Depois de mais duas ou três incidências dessa necessidade eu decidi não mais fazer isso, por ter mais tempo para montar a solução. Logo, aqui será exemplificado um [include](/z_outro_report.abap) que utilizará métodos de uma classe local que está em um [programa](/z_report.abap) diferente.
+Em alguns momentos houve a necessidade de **acessar uma classe local (criada dentro de um report) de outro include/report/classe**. A primeira solução que foi sugerida a mim era criar pela SE24 essa mesma classe que estava local. Quando houve a primeira necessidade, foi o que fiz realmente, mas ainda fiquei tendencioso a achar uma maneira de fazer esse acesso. Depois de mais duas ou três incidências dessa necessidade eu decidi não mais fazer isso, por ter mais tempo para montar a solução. Logo, aqui será exemplificado um [include](/files/z_outro_report.abap) que utilizará métodos de uma classe local que está em um [programa](/files/z_report.abap) diferente.
 
 ## Pré-requisitos
 - SAP NetWeaver
@@ -31,6 +31,10 @@ Em alguns momentos houve a necessidade de **acessar uma classe local (criada den
 Não mais e nem menos importante, mas estamos tratando com dois report's. O primeiro, para a necessidade que eu tive, era um include dentro de uma `exit`, onde os métodos da classe serão chamados, logo, esse é um `include` e o tipo desse report não afeta nada na solução. O segundo report, onde a classe foi implementada, **Programa executável (1)**. A classe pode ser implementada, ativada, mas quando for chamada no report `include`, não vai ter a funcionalidade acessível.
 
 ## Implementação
+
+Para demonstrar a implementação, foram criados dois arquivos:
+- [z_report.abap](/files/z_report.abap) - Programa principal com a classe local
+- [z_outro_report.abap](/files/z_outro_report.abap) - Include que acessa a classe local
 
 ### Declaração ##
 
